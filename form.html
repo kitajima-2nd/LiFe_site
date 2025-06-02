@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>株式会社LiFe 問い合わせフォーム</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="問い合わせフォーム">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<div id="container">
+		<!-- ヘッダー -->
+		<header>
+			<h1 id="logo">
+				<a href="index.html">
+					<img src="images/Logo_image.png" alt="株式会社LiFe">
+				</a>
+			</h1>
+
+			<!--開閉メニュー-->
+			<div id="menubar">
+
+				<nav>
+					<ul>
+						<li><a href="index.html">ホーム</a></li>
+						<li><a href="">ドロップダウン</a>
+							<ul>
+							<li><a href="#">メニュー1</a></li>
+							<li><a href="#">メニュー2</a></li>
+							<li><a href="#">メニュー3</a></li>
+							<li><a href="#">メニュー4</a></li>
+							</ul>
+						</li>
+						<li><a href="#BusinessIntroduction">事業</a></li>
+						<li><a href="#BusinessContent">会社概要</a></li>
+					</ul>
+				</nav>
+
+				<div class="sh">小さな端末でのみ表示させたい情報があれば、ここに記入して下さい。</div>
+
+			</div>
+			<!--/#menubar（開閉メニュー）-->
+
+			<div id="header-box">
+					<ul>
+						<li><a href="form.html">お問い合わせ</a></li>
+					</ul>
+				</div>
+
+		</header>
+
+
+		<main>
+			<!-- フォーム情報 -->
+			<section>
+				<form action="form.php" method="POST">
+					<label>お名前：<input type="text" name="name" required></label><br>
+					<label>メールアドレス：<input type="email" name="email" required></label><br>
+					<label>お問い合わせ内容：<br>
+						<textarea name="message" rows="5" required></textarea>
+					</label><br>
+					<input type="submit" value="送信">
+				</form>
+			</section>
+		</main>
+
+
+
+		<footer>
+				<small>Copyright&copy; 株式会社LiFe All Rights Reserved.</small>
+				<div class="footer-menu">
+					<ul>
+						<li><a href="index.html">ホーム</a></li>
+						<li><a href="#">プライバシーポリシー</a></li>
+						<li><a href="#">利用規約</a></li>
+						<li><a href="#">特商法に基づく表記</a></li>
+					</ul>
+				</div>
+		</footer>
+	</div>
+	<!--/#menubar-->
+
+	<!--jQueryの読み込み-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!--パララックス（inview）-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+	<script src="js/jquery.inview_set.js"></script>
+
+	<!--このテンプレート専用のスクリプト-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
